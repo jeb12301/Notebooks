@@ -1,0 +1,54 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 2) {a) $\psi$-complete};
+		\node [style=none] (1) at (2, 2) {b) $\psi$-ontic};
+		\node [style=none] (2) at (-0.25, -2) {c) $\psi$-epistemic};
+		\node [style=control] (9) at (-2.25, -5) {};
+		\node [style=none] (10) at (2.75, -5) {};
+		\node [style=none] (13) at (4.75, -5) {$\lambda \in \Lambda$};
+		\node [style=control] (15) at (-1.25, -5) {};
+		\node [style=control] (16) at (-0.25, -5) {};
+		\node [style=control] (17) at (0.75, -5) {};
+		\node [style=control] (18) at (1.75, -5) {};
+		\node [style=none] (19) at (3.75, -5) {};
+		\node [style=none] (20) at (-3.25, -5) {};
+		\node [style=control] (21) at (2.75, -5) {};
+		\node [style=none] (24) at (-2, -1) {$\lambda \in \Lambda$};
+		\node [style=control] (25) at (-6, -1) {};
+		\node [style=control] (28) at (-5, -1) {};
+		\node [style=none] (29) at (-3, -1) {};
+		\node [style=none] (30) at (-7, -1) {};
+		\node [style=control] (35) at (-4, -1) {};
+		\node [style=none] (36) at (-3.75, -1) {};
+		\node [style=none] (37) at (-4.25, -1) {};
+		\node [style=control] (38) at (1, -1) {};
+		\node [style=none] (39) at (6, -1) {};
+		\node [style=none] (40) at (8, -1) {$\lambda \in \Lambda$};
+		\node [style=control] (41) at (2, -1) {};
+		\node [style=control] (42) at (4, -1) {};
+		\node [style=control] (43) at (3, -1) {};
+		\node [style=control] (44) at (5, -1) {};
+		\node [style=none] (45) at (7, -1) {};
+		\node [style=none] (46) at (0, -1) {};
+		\node [style=control] (47) at (6, -1) {};
+		\node [style=none] (48) at (-5.75, -1) {};
+		\node [style=none] (49) at (-6.25, -1) {};
+		\node [style=none] (50) at (-4.75, 0.75) {$\textcolor{red}{\psi_2}$};
+		\node [style=none] (51) at (-6.75, 0.75) {$\textcolor{blue}{\psi_1}$};
+		\node [style=none] (52) at (4, 0.75) {$\textcolor{red}{\psi_2}$};
+		\node [style=none] (53) at (1, 0.75) {$\textcolor{blue}{\psi_1}$};
+		\node [style=none] (54) at (0.25, -3.25) {$\textcolor{red}{\psi_2}$};
+		\node [style=none] (55) at (-1.75, -3.25) {$\textcolor{blue}{\psi_1}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=blue, bend left=300, looseness=2.25] (17) to (9);
+		\draw [style=red, bend left=60, looseness=2.25] (16) to (10.center);
+		\draw [style=arrowZ] (20.center) to (19.center);
+		\draw [style=arrowZ] (30.center) to (29.center);
+		\draw [style=red, bend left=90, looseness=11.75] (37.center) to (36.center);
+		\draw [style=blue, bend right=75, looseness=3.00] (43) to (38);
+		\draw [style=red, bend left=75, looseness=3.00] (42) to (39.center);
+		\draw [style=arrowZ] (46.center) to (45.center);
+		\draw [style=blue, bend left=90, looseness=11.75] (49.center) to (48.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

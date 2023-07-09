@@ -1,0 +1,7 @@
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[bb=px]{mathalpha}
+
+\usetikzlibrary{automata,arrows,patterns,shapes.geometric,shapes.misc,snakes,decorations.footprints}
+\tikzset{>=stealth}

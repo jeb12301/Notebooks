@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (0, 0.5) {$i$};
+		\node [style=none] (3) at (-0.5, 0) {};
+		\node [style=none] (4) at (2.5, 0) {};
+		\node [style=square] (5) at (1, 0) {$I$};
+		\node [style=none] (6) at (2, 0.5) {$j$};
+		\node [style=none] (7) at (3.25, 0) {$\equiv$};
+		\node [style=none] (8) at (4, 0) {};
+		\node [style=none] (9) at (6.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=180, out=0] (3.center) to (5);
+		\draw (5) to (4.center);
+		\draw (8.center) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

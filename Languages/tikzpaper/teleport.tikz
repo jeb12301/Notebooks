@@ -1,0 +1,74 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (6.5, 0) {};
+		\node [style=none] (1) at (6.5, -2) {};
+		\node [style=none] (2) at (5, 0) {};
+		\node [style=none] (3) at (5, -2) {};
+		\node [style=none] (6) at (6.5, 0) {};
+		\node [style=none] (7) at (6.5, 0) {};
+		\node [style={t_l}] (8) at (6.5, 0) {$\ \ \;$};
+		\node [style=none] (9) at (5, -1) {};
+		\node [style=square] (10) at (5, -1) {$\ \,$};
+		\node [style=square] (11) at (4.25, -2) {$\ \,$};
+		\node [style=square] (12) at (5.75, -2) {$\ \,$};
+		\node [style=none] (14) at (7.5, -3) {};
+		\node [style=none] (16) at (6.5, -4) {};
+		\node [style=square] (19) at (3.5, 0) {$\ \,$};
+		\node [style={t_r}] (20) at (0.5, 0) {$\ \:$};
+		\node [style={t_r}] (21) at (0.5, -2) {$\ \:$};
+		\node [style=square] (22) at (2, -2) {$\ \;$};
+		\node [style=square] (23) at (2, 0) {$\ \;$};
+		\node [style=square] (24) at (2, -4) {$\ \;$};
+		\node [style=square] (25) at (0.5, -4) {$\ \;$};
+		\node [style=none] (26) at (-1, -4) {};
+		\node [style=none] (27) at (5.75, -2) {$H$};
+		\node [style=none] (28) at (5, -1) {$H$};
+		\node [style=none] (29) at (3.5, 0) {$H$};
+		\node [style=none] (30) at (4.25, -2) {$H$};
+		\node [style=none] (31) at (2, 0) {$X^i$};
+		\node [style=none] (32) at (2, -2) {$X^j$};
+		\node [style=none] (34) at (0.5, -2) {$0$};
+		\node [style=none] (35) at (6.5, 0) {$|\psi\rangle$};
+		\node [style=none] (36) at (2, -4) {$X^j$};
+		\node [style=none] (37) at (0.5, -4) {$Z^i$};
+		\node [style=none] (38) at (0.5, 0) {$0$};
+		\node [style=none] (39) at (12.5, 0) {};
+		\node [style=none] (40) at (12, -2) {};
+		\node [style=none] (41) at (11, 0) {};
+		\node [style=none] (42) at (11, -2) {};
+		\node [style=none] (43) at (12.5, 0) {};
+		\node [style=none] (44) at (12.5, 0) {};
+		\node [style={t_l}] (45) at (12.5, 0) {$\ \ \;$};
+		\node [style=none] (46) at (13, -3) {};
+		\node [style=none] (47) at (12, -4) {};
+		\node [style=none] (48) at (9.25, -4) {};
+		\node [style=none] (49) at (12.5, 0) {$|\psi\rangle$};
+		\node [style=none] (50) at (10, -1) {};
+		\node [style=none] (51) at (8.5, -2) {$\equiv$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (8) to (2.center);
+		\draw (2.center) to (10);
+		\draw (10) to (3.center);
+		\draw (3.center) to (12);
+		\draw (3.center) to (11);
+		\draw (12) to (1.center);
+		\draw [bend left=45, looseness=1.25] (1.center) to (14.center);
+		\draw [bend right=45, looseness=1.25] (16.center) to (14.center);
+		\draw (2.center) to (19);
+		\draw (19) to (23);
+		\draw (22) to (11);
+		\draw (16.center) to (24);
+		\draw (24) to (25);
+		\draw (26.center) to (25);
+		\draw (23) to (20);
+		\draw (22) to (21);
+		\draw [bend left=45, looseness=1.25] (40.center) to (46.center);
+		\draw [bend right=45, looseness=1.25] (47.center) to (46.center);
+		\draw (49.center) to (41.center);
+		\draw [bend right=45, looseness=1.25] (41.center) to (50.center);
+		\draw [bend left=45, looseness=1.25] (42.center) to (50.center);
+		\draw (42.center) to (40.center);
+		\draw (47.center) to (48.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
